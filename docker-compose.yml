@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  homer:
+    image: b4bz/homer:latest
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - /opt/docker/homer:/www/assets
